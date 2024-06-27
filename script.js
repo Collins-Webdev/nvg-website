@@ -22,12 +22,12 @@ const translations = {
         service3description: "Nous offrons des solutions de logistiques et de négoce des produits tropicaux, d'équipement informatique et bureautique sur les marchés internationaux, en nous appuyant sur un réseau relationnel bâti durant ces dernières décennies afin d'offrir de meilleures expériences à nos partenaires.",
         nosproduits: "Nos produits",
         produit1: "Gel hydro-alcoolique",
-        produit2: "Exemplaire de sac scolaire solaire fourni au projet SWEDD BENIN",
-        produit3: "Exemplaire de sac scolaire solaire fourni au projet SWEDD CAMEROUN",
+        produit2: "Exemplaire de sac \nscolaire solaire fourni au \nprojet SWEDD BENIN",
+        produit3: "Exemplaire de sac \nscolaire solaire fourni au \nprojet SWEDD CAMEROUN",
         produit4: "Serviettes Hygiéniques",
         produit5: "Maccaron",
-        produit6: "Exemplaire de sac scolaire solaire fourni au projet SWEDD CAMEROUN",
-        produit7: "Exemplaire de sac scolaire solaire simple",
+        produit6: "Exemplaire de sac \nscolaire solaire fourni au \nprojet SWEDD CAMEROUN",
+        produit7: "Exemplaire de sac \nscolaire solaire simple",
         projetphares: "Nos Projets Phares",
         projet1titre: "Énergie Solaire pour Tous",
         projet1description: "Installation de panneaux solaires dans 100 villages, apportant l'électricité à plus de 50 000 personnes.",
@@ -87,12 +87,12 @@ const translations = {
         service3description: "We offer logistics and trading solutions for tropical products, computer and office equipment on international markets, relying on a relational network built over the last decades to offer better experiences to our partners.",
         nosproduits: "Our products",
         produit1: "Hydroalcoholic gel",
-        produit2: "Example of solar school bag provided to the SWEDD BENIN project",
-        produit3: "Example of solar school bag provided to the SWEDD CAMEROON project",
+        produit2: "Example of solar \nschool bag provided to the \nSWEDD BENIN project",
+        produit3: "Example of solar \nschool bag provided to the \nSWEDD CAMEROON project",
         produit4: "Sanitary Napkins",
         produit5: "Macaron",
-        produit6: "Example of solar school bag provided to the SWEDD CAMEROON project",
-        produit7: "Example of simple solar school bag",
+        produit6: "Example of solar \nschool bag provided to the \nSWEDD CAMEROON project",
+        produit7: "Example of simple \nsolar school bag",
         projetphares: "Our Flagship Projects",
         projet1titre: "Solar Energy for All",
         projet1description: "Installation of solar panels in 100 villages, bringing electricity to over 50,000 people.",
@@ -152,11 +152,11 @@ const translations = {
         service3description: "我们在国际市场上为热带产品、计算机和办公设备提供物流和贸易解决方案，依靠过去几十年建立的关系网络，为我们的合作伙伴提供更好的体验。",
         nosproduits: "我们的产品",
         produit1: "消毒凝胶",
-        produit2: "SWEDD贝宁项目提供的太阳能书包示例",
-        produit3: "SWEDD喀麦隆项目提供的太阳能书包示例",
+        produit2: "SWEDD贝宁项目提供的 \n太阳能书包示例",
+        produit3: "SWEDD喀麦隆项目提供的 \n太阳能书包示例",
         produit4: "卫生巾",
         produit5: "马卡龙",
-        produit6: "SWEDD喀麦隆项目提供的太阳能书包示例",
+        produit6: "SWEDD喀麦隆项目提供的 \n太阳能书包示例",
         produit7: "简单太阳能书包示例",
         projetphares: "我们的旗舰项目",
         projet1titre: "全民太阳能",
@@ -203,13 +203,13 @@ function changeLanguage(lang) {
     document.querySelectorAll('[data-lang]').forEach(element => {
         const key = element.getAttribute('data-lang');
         if (translations[lang] && translations[lang][key]) {
-            element.textContent = translations[lang][key];
+            element.innerHTML = translations[lang][key].replace(/\n/g, '<br>');
         }
     });
     document.querySelectorAll('[data-lang-placeholder]').forEach(element => {
         const key = element.getAttribute('data-lang-placeholder');
         if (translations[lang] && translations[lang][key]) {
-            element.placeholder = translations[lang][key];
+            element.placeholder = translations[lang][key].replace(/\n/g, ' ');
         }
     });
 }
