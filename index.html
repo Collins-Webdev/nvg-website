@@ -1,0 +1,286 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Vision Group (NVG) - Leader de l'innovation au Bénin</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="img/album/1logo.jpg" alt="NVG Logo">
+            </div>
+            <ul>
+                <li><a href="#accueil" data-lang="accueil">Accueil</a></li>
+                <li><a href="#a-propos" data-lang="apropos">À propos</a></li>
+                <li><a href="#services" data-lang="services">Services</a></li>
+                <li><a href="#projets" data-lang="projets">Projets</a></li>
+                <li><a href="#equipe" data-lang="equipe">Équipe</a></li>
+                <li><a href="#chiffres" data-lang="chiffres">Nos chiffres</a></li>
+                <li><a href="#contact" data-lang="contact">Contact</a></li>
+            </ul>
+            <div class="lang-selector">
+                <select id="langSelect">
+                    <option value="fr">Français</option>
+                    <option value="en">English</option>
+                    <option value="zh">中文</option>
+                </select>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="accueil" class="parallax">
+            <div class="content">
+                <h1 data-lang="titre">New Vision Group</h1>
+                <p data-lang="soustitre">Façonnons l'avenir du Bénin ensemble</p>
+            </div>
+        </section>
+
+        <section id="a-propos">
+            <div class="about-content">
+                <h2 data-lang="apropostitre">À propos de NVG</h2>
+                <div class="about-text">
+                    <p data-lang="aproposdescription">New Vision Group est un groupe leader dans l'innovation et le développement au Bénin. Nous nous engageons à créer des solutions durables pour un avenir meilleur.</p>
+                </div>
+                <a href="nvg.pdf" download class="download-btn" target="_blank" data-lang="telecharger">Télécharger la brochure</a>
+            </div>
+            <div class="about-image"></div>
+        </section>
+
+        <section id="services">
+            <h2 data-lang="nosservices">Nos Services</h2>
+            <div class="service-grid">
+                <div class="service-item">
+                    <i class="fas fa-shopping-cart"></i>
+                    <h3 data-lang="service1titre">Production et commercialisation</h3>
+                    <p data-lang="service1description">Avec notre unité de production nous confectionnons et distribuons des sacs scolaires solaires, des sacs scolaires, des tenues scolaires, des serviettes hygiéniques réutilisables pour femmes, des gels biomédicaux. Nous distribuons également des équipements d'énergie renouvelable, d'équipements pour formation et biomédicaux : des fournitures pédagogiques, des kits scolaires dans diverses localités.</p>
+                </div>
+                <div class="service-item">
+                    <i class="fas fa-globe-africa"></i>
+                    <h3 data-lang="service2titre">Fourniture et installation d'équipements et matériels</h3>
+                    <p data-lang="service2description">Nous fournissons pour les organismes publics et privés les équipements nécessaires à leur bon fonctionnement et pour la réussite de leurs projets. Notre logique d'intervention repose sur l'identification des types d'équipements et matériels suivant les caractéristiques adaptées à l'usage; et sur une assistance à choisir le meilleur équipement quelle que soit la nature de votre projet et suivant vos exigences (coût, qualité, délai).</p>
+                </div>
+                <div class="service-item">
+                    <i class="fa fa-truck"></i>
+                    <h3 data-lang="service3titre">Import-export</h3>
+                    <p data-lang="service3description">Nous offrons des solutions de logistiques et de négoce des produits tropicaux, d'équipement informatique et bureautique sur les marchés internationaux, en nous appuyant sur un réseau relationnel bâti durant ces dernières décennies afin d'offrir de meilleures expériences à nos partenaires.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="servicet">
+            <h2 data-lang="nosproduits">Nos produits</h2>
+            <div class="servicet-grid">
+                <div class="servicet-item">
+                    <i class="fas fa-shopping-cart"></i>
+                    <h3 class="titret" data-lang="produit1">Gel hydro-alcoolique</h3>
+                    <img class="petitImg" src="img/prod/19-removebg-preview.png" alt="Produit 1"> 
+                </div>
+                <div class="servicet-item">
+                    <i class="fas fa-globe-africa"></i>
+                    <h3 class="titret" data-lang="produit2">Exemplaire de sac scolaire solaire fourni au projet SWEDD BENIN</h3>
+                    <img class="petitImg" src="img/prod/9-removebg-preview.png" alt="Produit 2"> 
+                </div>
+                <div class="servicet-item">
+                    <i class="fa fa-truck"></i>
+                    <h3 class="titret" data-lang="produit3">Exemplaire de sac scolaire solaire fourni au projet SWEDD CAMEROUN</h3>
+                    <img class="petitImg" src="img/prod/5-removebg-preview.png" alt="Produit 3"> 
+                </div>
+            </div>  
+            <div class="servicet-grid">
+                <div class="servicet-item">
+                    <i class="fas fa-shopping-cart"></i>
+                    <h3 class="titret" data-lang="produit4">Serviettes Hygiéniques</h3>
+                    <img class="petitImg" src="img/prod/20-removebg-preview.png" alt="Produit 4"> 
+                </div>
+                <div class="servicet-item">
+                    <i class="fas fa-globe-africa"></i>
+                    <h3 class="titret" data-lang="produit5">Maccaron</h3>
+                    <img class="petitImg" id="special" src="img/prod/26-removebg-preview.png" alt="Produit 5"> 
+                </div>
+                <div class="servicet-item">
+                    <i class="fa fa-truck"></i>
+                    <h3 class="titret" data-lang="produit6">Exemplaire de sac scolaire solaire fourni au projet SWEDD CAMEROUN</h3>
+                    <img class="petitImg" src="img/prod/14-removebg-preview.png" alt="Produit 6"> 
+                </div>
+                <div class="servicet-item">
+                    <i class="fa fa-truck"></i>
+                    <h3 class="titret" data-lang="produit7">Exemplaire de sac scolaire solaire simple</h3>
+                    <img class="petitImg" src="img/prod/15-removebg-preview.png" alt="Produit 7"> 
+                </div>
+            </div>  
+        </section>
+
+        <section id="projets">
+            <h2 data-lang="projetphares">Nos Projets Phares</h2>
+            <div class="project-carousel">
+                <div class="project-item">
+                    <img src="img/album/15.jpg" alt="Projet 1">
+                    <div class="project-info">
+                        <h3 data-lang="projet1titre">Énergie Solaire pour Tous</h3>
+                        <p data-lang="projet1description">Installation de panneaux solaires dans 100 villages, apportant l'électricité à plus de 50 000 personnes.</p>
+                    </div>
+                </div>
+                <div class="project-item">
+                    <img src="img/album/30.jpg" alt="Projet 2">
+                    <div class="project-info">
+                        <h3 data-lang="projet2titre">Agriculture Intelligente</h3>
+                        <p data-lang="projet2description">Mise en place de systèmes d'irrigation innovants, augmentant les rendements agricoles de 40%.</p>
+                    </div>
+                </div>
+                <div class="project-item">
+                    <img src="img/album/32.jpg" alt="Projet 3">
+                    <div class="project-info">
+                        <h3 data-lang="projet3titre">Éducation Numérique</h3>
+                        <p data-lang="projet3description">Déploiement de tablettes éducatives dans 200 écoles, touchant plus de 100 000 élèves.</p>
+                    </div>
+                </div>
+                <div class="project-item">
+                    <img src="img/album/12.jpg" alt="Projet 4">
+                    <div class="project-info">
+                        <h3 data-lang="projet4titre">Éducation Numérique</h3>
+                        <p data-lang="projet4description">Déploiement de tablettes éducatives dans 200 écoles, touchant plus de 100 000 élèves.</p>
+                    </div>
+                </div>
+                <div class="project-item">
+                    <img src="img/album/14.jpg" alt="Projet 5">
+                    <div class="project-info">
+                        <h3 data-lang="projet5titre">Éducation Numérique</h3>
+                        <p data-lang="projet5description">Déploiement de tablettes éducatives dans 200 écoles, touchant plus de 100 000 élèves.</p>
+                    </div>
+                </div>
+                <div class="project-item">
+                    <img src="img/album/26.jpg" alt="Projet 6">
+                    <div class="project-info">
+                        <h3 data-lang="projet6titre">Éducation Numérique</h3>
+                        <p data-lang="projet6description">Déploiement de tablettes éducatives dans 200 écoles, touchant plus de 100 000 élèves.</p>
+                    </div>
+                </div>
+                <div class="project-item">
+                    <img src="img/album/25.jpg" alt="Projet 7">
+                    <div class="project-info">
+                        <h3 data-lang="projet7titre">Éducation Numérique</h3>
+                        <p data-lang="projet7description">Déploiement de tablettes éducatives dans 200 écoles, touchant plus de 100 000 élèves.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="project-nav">
+                <button class="prev-btn"><i class="fas fa-chevron-left"></i></button>
+                <button class="next-btn"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </section>
+
+        <section id="equipe">
+            <h2 data-lang="equipedirection">Notre Équipe de Direction</h2>
+            <img src="img/orga.jpeg" alt="Organigramme de l'équipe">
+        </section>
+
+        <section id="chiffres">
+            <h2 data-lang="chiffrescles">Nos Chiffres Clés</h2>
+            <div class="chiffres-grid">
+                <div class="chiffre-item">
+                    <h3>631070</h3>
+                    <p data-lang="chiffre1">Serviettes hygiéniques fabriquées et distribuées depuis 2020</p>
+                </div>
+                <div class="chiffre-item">
+                    <h3>126214</h3>
+                    <p data-lang="chiffre2">Filles bénéficiaires depuis 2020</p>
+                </div>
+                <div class="chiffre-item">
+                    <h3>126000</h3>
+                    <p data-lang="chiffre3">Sacs scolaires confectionnés et distribués depuis 2020</p>
+                </div>
+                <div class="chiffre-item">
+                    <h3>3000</h3>
+                    <p data-lang="chiffre4">Machines livrées en 2023</p>
+                </div>
+                <div class="chiffre-item">
+                    <h3>80</h3>
+                    <p data-lang="chiffre5">Conteneurs transités au cours de l'année</p>
+                </div>
+                <div class="chiffre-item">
+                    <h3>7402</h3>
+                    <p data-lang="chiffre6">Couturiers collaborateurs</p>
+                </div>
+                <div class="chiffre-item">
+                    <h3>300</h3>
+                    <p data-lang="chiffre7">Collaborateurs à temps plein et occasionnels</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="partenaires">
+            <h2 data-lang="partenaires">Nos Partenaires</h2>
+            <div class="partner-carousel">
+                <img src="img/1.png" alt="Partenaire 1">
+                <img src="img/2.png" alt="Partenaire 2">
+                <img src="img/3.png" alt="Partenaire 3">
+                <img src="img/4.png" alt="Partenaire 4">
+                <img src="img/5.png" alt="Partenaire 5">
+                <img src="img/6.png" alt="Partenaire 6">
+                <img src="img/7.png" alt="Partenaire 7">
+                <img src="img/8.png" alt="Partenaire 8">
+                <img src="img/9.png" alt="Partenaire 9">
+                <img src="img/10.png" alt="Partenaire 10">
+                <img id="keyimg" src="img/40.png" alt="Partenaire 11">
+            </div>
+        </section>
+
+<section id="contact">
+    <h2 data-lang="contacteznous">Contactez-nous</h2>
+    <div class="contact-container">
+        <div class="contact-info">
+            <p><i class="fas fa-envelope"></i> <span data-lang="email1">info@newvisiongroupsa.bj</span></p>
+            <p><i class="fas fa-envelope"></i> <span data-lang="email2">s.client@newvisiongroupsa.bj</span></p>
+            <p><i class="fas fa-phone"></i> <span data-lang="telephone">94 74 74 11 / 90 94 52 55</span></p>
+            <p><i class="fas fa-map-marker-alt"></i> <span data-lang="adresse">Cotonou, Gbedjromede 16 ampoules</span></p>
+        </div>
+        <div class="map-container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3965.119774118109!2d2.417672174991648!3d6.3785366936117835!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNsKwMjInNDIuNyJOIDLCsDI1JzEyLjkiRQ!5e0!3m2!1sfr!2sbj!4v1718972224161!5m2!1sfr!2sbj" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <form class="contact-form">
+            <p class="form-intro" data-lang="formintro">Nous sommes impatients de vous entendre ! N'hésitez pas à nous contacter pour toute question ou collaboration.</p>
+            <div class="input-group">
+                <input type="text" id="name" required data-lang-placeholder="nom">
+                <label for="name" data-lang="nom">Nom</label>
+            </div>
+            <div class="input-group">
+                <input type="email" id="email" required data-lang-placeholder="email">
+                <label for="email" data-lang="email">Email</label>
+            </div>
+            <div class="input-group">
+                <textarea id="message" required data-lang-placeholder="message"></textarea>
+                <label for="message" data-lang="message">Message</label>
+            </div>
+            <button type="submit" class="submit-btn" data-lang="envoyer">Envoyer</button>
+        </form>
+    </div>
+</section>
+</main>
+
+<footer>
+    <div class="footer-content">
+        <p>&copy; 2024 New Vision Group. <span data-lang="droitsreserves">Tous droits réservés.</span></p>
+        <div class="country-flags">
+            <img src="img/drapeau/ivoire.png" alt="Côte d'Ivoire">
+            <img src="img/drapeau/burkina.png" alt="Burkina Faso">
+            <img src="img/drapeau/france.png" alt="France">
+            <img src="img/drapeau/chine.png" alt="Chine">
+            <img src="img/drapeau/cameroun.png" alt="Cameroun">
+            <img src="img/drapeau/nigeria.png" alt="Niger">
+            <img src="img/drapeau/benin.png" alt="Bénin">
+            <img src="img/drapeau/togo.png" alt="Togo">
+            <img src="img/drapeau/mali.png" alt="Mali">
+        </div>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
+
