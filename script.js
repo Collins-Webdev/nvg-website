@@ -4,6 +4,7 @@ const translations = {
         accueil: "Accueil",
         apropos: "À propos",
         services: "Services",
+        produits: "Produits",
         projets: "Projets",
         equipe: "Équipe",
         chiffres: "Nos chiffres",
@@ -68,8 +69,9 @@ const translations = {
     en: {
         accueil: "Home",
         apropos: "About",
-        services: "Services",
         projets: "Projects",
+        services: "Services",
+        produits: "Produits",
         equipe: "Team",
         chiffres: "Our numbers",
         contact: "Contact",
@@ -134,6 +136,7 @@ const translations = {
         accueil: "首页",
         apropos: "关于我们",
         services: "服务",
+        produits: "我们的产品",
         projets: "项目",
         equipe: "团队",
         chiffres: "我们的数字",
@@ -316,6 +319,86 @@ function animateNumbers() {
         updateNumber();
     });
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   // Animation du slider de projets
+   const projectSlider = document.querySelector('.pro-slider');
+   let isDown = false;
+   let startX;
+   let scrollLeft;
+
+   projectSlider.addEventListener('mousedown', (e) => {
+       isDown = true;
+       startX = e.pageX - projectSlider.offsetLeft;
+       scrollLeft = projectSlider.scrollLeft;
+   });
+
+   projectSlider.addEventListener('mouseleave', () => {
+       isDown = false;
+   });
+
+   projectSlider.addEventListener('mouseup', () => {
+       isDown = false;
+   });
+
+   projectSlider.addEventListener('mousemove', (e) => {
+       if (!isDown) return;
+       e.preventDefault();
+       const x = e.pageX - projectSlider.offsetLeft;
+       const walk = (x - startX) * 3;
+       projectSlider.scrollLeft = scrollLeft - walk;
+   });
+
+
+
+   const aboutSection = document.querySelector('#apropos');
+   const aboutObserver = new IntersectionObserver((entries) => {
+       if (entries[0].isIntersecting) {
+           animateValue(document.getElementById('pro-count'), 0, 50, 2000);
+           aboutObserver.unobserve(aboutSection);
+       }
+   });
+
+   aboutObserver.observe(aboutSection);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // Déclencher l'animation des chiffres lorsque la section est visible
 const observerOptions = {
