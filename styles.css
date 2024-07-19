@@ -41,7 +41,7 @@ nav {
 
 nav ul {
     display: flex;
-    list-style: none;
+    /* list-style: none; */
 }
 
 
@@ -68,7 +68,7 @@ nav ul li a:hover {
 .lang-selector select {
     padding: 0.5rem;
     border-radius: 5px;
-    border: 1px solid #ddd;
+    border: 5px solid #cc864f;
 }
 
 main {
@@ -125,7 +125,8 @@ h1, h2, h3 {
 }
 
 #accueil {
-    background-image: url('img/album/23.jpg');
+    /* background-image: url('img/album/23.jpg'); */
+    background-image: url('img/16.jpg');
 }
 
 #accueil h1 {
@@ -163,7 +164,7 @@ h1, h2, h3 {
 .download-btn {
     display: inline-block;
     padding: 1rem 2rem;
-    background: var(--primary-color);
+    background: #cc864f;;
     color: white;
     text-decoration: none;
     border-radius: 50px;
@@ -205,13 +206,26 @@ h3.titret{
     padding-right: 0rem !important;
 }
 
-.service-item, .team-member {
+/* .service-item, .team-member {
     background-color: #fff;
     padding: 2rem;
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
     transition: transform 0.3s ease;
+} */
+
+
+
+
+.service-item, .team-member {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 50px 50px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
 }
+
+
 .servicet-item, .team-member {
     /* background-color: #fff; */
     /* padding: 2rem; */
@@ -360,7 +374,7 @@ h3.titret{
 }
 
 .prev-btn, .next-btn {
-    background: var(--primary-color);
+    background: #cc864f;
     color: white;
     border: none;
     padding: 10px 20px;
@@ -385,7 +399,7 @@ h3.titret{
 }
 
 #chiffres {
-    background-color: var(--primary-color);
+    background-color: #cc864f;
     color: white;
 }
 
@@ -505,7 +519,7 @@ h3.titret{
 }
 
 .submit-btn {
-    background: var(--primary-color);
+    background: #cc864f;
     color: white;
     padding: 10px 20px;
     border: none;
